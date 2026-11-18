@@ -1,46 +1,176 @@
 
-<section class="hero">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d50">
+  <meta name="description" content="Mariam G. Mambuay — Visual Storyteller">
 
-  <!-- Animated background -->
-  <video class="hero-video"
-         autoplay
-         muted
-         loop
-         playsinline>
-    <source src="assets/videos/hero-background.mp4"
-            type="video/mp4">
-  </video>
+  <title>Mariam G. Mambuay — Visual Storyteller</title>
 
-  <!-- Background overlay -->
-  <div class="hero-overlay"></div>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Mariam's original portrait -->
-  <img
-    src="assets/images/mariam-portrait.png"
-    class="hero-portrait"
-    alt="Mariam Mambuay"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
 
-  <!-- Website content -->
-  <nav class="navbar">
-    <div class="logo">Mariam G. Mambuay</div>
-    <div class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <div class="hero-content">
-    <p>MARIAM G. MAMBUAY</p>
-    <h1>Visual Storyteller</h1>
-    <h3>ENGINEERING × ART × MOTION</h3>
-    <p>
-      A Civil Engineering student and visual creative
-      specializing in visual storytelling.
-    </p>
-  </div>
+<body>
 
-</section>
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home"
+      aria-label="Mariam's portfolio introduction">
+
+      <!-- Animated Background Video -->
+      <video
+        class="hero__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="assets/images/hero-poster.jpg"
+        aria-hidden="true">
+
+        <source
+          src="assets/videos/hero-background.mp4"
+          type="video/mp4">
+
+      </video>
+
+      <!-- Background Effects -->
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+
+      <!-- NAVIGATION -->
+      <header class="site-header">
+
+        <a class="brand" href="#home"
+          aria-label="Mariam G. Mambuay home">
+          Mariam G. Mambuay
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <b class="sr-only">Toggle navigation</b>
+        </button>
+
+        <!-- Navigation Links -->
+        <nav class="nav" id="primary-nav"
+          aria-label="Main navigation">
+
+          <a class="is-active" href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+
+        </nav>
+
+      </header>
+
+      <!-- STATIC PORTRAIT -->
+      <img
+        class="hero__portrait"
+        src="assets/images/mariam-portrait.png"
+        alt="Mariam G. Mambuay"
+        fetchpriority="high">
+
+      <!-- HERO CONTENT -->
+      <div class="hero__copy">
+
+        <p class="eyebrow">
+          <span>MARIAM G. MAMBUAY</span>
+          <i></i>
+        </p>
+
+        <h1>
+          Visual <em>Storyteller</em>
+        </h1>
+
+        <p class="discipline">
+          ENGINEERING
+          <span>×</span>
+          ART
+          <span>×</span>
+          MOTION
+        </p>
+
+        <p class="intro">
+          A Civil Engineering student and visual creative
+          specializing in hand-drawn style visuals,
+          photography, videography, editing, and graphic design.
+        </p>
+
+        <!-- ACTION BUTTONS -->
+        <div class="hero__actions">
+
+          <a class="button button--primary"
+            href="#portfolio">
+            Explore My Work
+            <span aria-hidden="true">→</span>
+          </a>
+
+          <a class="button button--outline"
+            href="#contact">
+            Get in Touch
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- SCROLL INDICATOR -->
+      <a class="scroll-cue" href="#services">
+        <span></span>
+        SCROLL TO EXPLORE
+      </a>
+
+      <div class="hero__bottom-fade" aria-hidden="true"></div>
+
+    </section>
+
+    <!-- NEXT SECTION PLACEHOLDER -->
+    <section class="next-section" id="services">
+
+      <p class="section-kicker">
+        A CREATIVE PRACTICE
+      </p>
+
+      <h2>
+        Where engineering meets
+        <em>imagination.</em>
+      </h2>
+
+      <p>
+        Illustration · Photography · Videography · Graphic Design
+      </p>
+
+      <span class="section-note">
+        Creative services section — next to be built
+      </span>
+
+    </section>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
